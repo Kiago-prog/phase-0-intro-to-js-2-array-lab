@@ -39,9 +39,10 @@ describe('index.js', function () {
     });
 
     describe('destructivelyRemoveFirstCat()', function () {
+      
+      
       it('removes the first cat from the cats array', function () {
         destructivelyRemoveFirstCat();
-
         expect(cats).to.have.ordered.members(["Otis", "Garfield"]).and.to.not.include('Milo');
       });
     });
